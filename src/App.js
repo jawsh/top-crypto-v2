@@ -10,7 +10,6 @@ function App() {
 
     const getData = () => {
         axios.get("https://api.coincap.io/v2/assets?limit=10").then((res) => {
-            console.log(res);
             setCoins(res.data.data);
         });
     };
